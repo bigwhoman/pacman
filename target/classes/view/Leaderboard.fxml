@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LeaderboardController">
+   <left>
+      <AnchorPane prefHeight="554.0" prefWidth="799.0" style="-fx-background-color: #000c66;"
+                  BorderPane.alignment="CENTER">
+         <VBox layoutX="529.0" layoutY="36.0" prefHeight="511.0" prefWidth="162.0" spacing="6.0">
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="162.0"
+                   style="-fx-border-color: black; -fx-background-color: black;" text="username" textFill="#00d5ff">
+               <font>
+                  <Font name="System Bold" size="23.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.66"/>
+               </effect>
+            </Label>
+            <Label fx:id="user1" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user2" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user3" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user4" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user5" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user6" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user7" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                   style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user8" alignment="CENTER" layoutX="10.0" layoutY="363.0" prefHeight="48.0"
+                   prefWidth="162.0" style="-fx-border-color: black; -fx-background-color: grey;" text="-"
+                   textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user9" alignment="CENTER" layoutX="10.0" layoutY="413.0" prefHeight="50.0"
+                   prefWidth="161.0" style="-fx-border-color: black; -fx-background-color: grey;" text="-"
+                   textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+            <Label fx:id="user10" alignment="CENTER" layoutX="10.0" layoutY="428.0" prefHeight="50.0"
+                   prefWidth="161.0" style="-fx-border-color: black; -fx-background-color: grey;" text="-"
+                   textFill="#fbff00">
+               <font>
+                  <Font name="System Bold" size="19.0"/>
+               </font>
+               <effect>
+                  <Bloom threshold="0.8"/>
+               </effect>
+            </Label>
+         </VBox>
+         <VBox layoutX="87.0" layoutY="36.0" prefHeight="511.0" prefWidth="162.0" spacing="6.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="67.0" prefWidth="162.0"
+                      style="-fx-border-color: black; -fx-background-color: black;" text="highest score"
+                      textFill="#00d5ff">
+                  <font>
+                     <Font name="System Bold" size="23.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.66"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score1" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score2" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score3" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score4" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score5" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score6" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score7" alignment="CENTER" prefHeight="50.0" prefWidth="161.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score8" alignment="CENTER" prefHeight="49.0" prefWidth="162.0"
+                      style="-fx-border-color: black; -fx-background-color: grey;" text="-" textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score9" alignment="CENTER" layoutX="10.0" layoutY="363.0" prefHeight="50.0"
+                      prefWidth="161.0" style="-fx-border-color: black; -fx-background-color: grey;" text="-"
+                      textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+               <Label fx:id="score10" alignment="CENTER" layoutX="10.0" layoutY="76.0" prefHeight="50.0"
+                      prefWidth="161.0" style="-fx-border-color: black; -fx-background-color: grey;" text="-"
+                      textFill="#fbff00">
+                  <font>
+                     <Font name="System Bold" size="19.0"/>
+                  </font>
+                  <effect>
+                     <Bloom threshold="0.8"/>
+                  </effect>
+               </Label>
+            </children>
+         </VBox>
+         <Line endX="196.60003662109375" endY="-7.62939453125E-6" layoutX="595.0" layoutY="94.0" startX="-590.0"
+               stroke="#862020" strokeType="OUTSIDE" strokeWidth="6.0"/>
+         <Label alignment="CENTER" layoutX="301.0" layoutY="13.4" prefHeight="75.0" prefWidth="162.0"
+                style="-fx-border-color: black; -fx-background-color: black;" text="rank" textFill="#e5fbff">
+            <font>
+               <Font name="System Bold" size="23.0"/>
+            </font>
+            <effect>
+               <Bloom threshold="0.66"/>
+            </effect>
+         </Label>
+         <Line endX="178.71466064453125" layoutX="605.0" layoutY="139.0" startX="-577.2852783203125" stroke="#862020"
+               strokeType="OUTSIDE" strokeWidth="6.0"/>
+         <Line endX="165.11468505859375" layoutX="605.0" layoutY="185.0" startX="-571.685302734375" stroke="#862020"
+               strokeType="OUTSIDE" strokeWidth="6.0"/>
+         <Line endX="155.91473388671875" layoutX="603.0" layoutY="234.0" startX="-560.88525390625" stroke="#862020"
+               strokeType="OUTSIDE" strokeWidth="6.0"/>
+         <Line endX="139.31475830078125" layoutX="610.0" layoutY="279.0" startX="-560.685302734375" stroke="#862020"
+               strokeType="OUTSIDE" strokeWidth="6.0"/>
+         <Line endX="135.51470947265625" layoutX="609.0" layoutY="324.0" startX="-554.88525390625" stroke="#862020"
+               strokeType="OUTSIDE" strokeWidth="5.0"/>
+         <Line endX="126.91473388671875" endY="3.0517578125E-5" layoutX="608.0" layoutY="369.0"
+               startX="-548.2852783203125" startY="3.0517578125E-5" stroke="#862020" strokeType="OUTSIDE"
+               strokeWidth="5.0"/>
+         <Line endX="121.11468505859375" endY="3.0517578125E-5" layoutX="605.0" layoutY="414.0" startX="-539.0"
+               startY="3.0517578125E-5" stroke="#862020" strokeType="OUTSIDE" strokeWidth="5.0"/>
+         <Line endX="101.11468505859375" endY="3.0517578125E-5" layoutX="605.0" layoutY="504.0"
+               startX="-530.2000122070312" startY="3.0517578125E-5" stroke="#862020" strokeType="OUTSIDE"
+               strokeWidth="6.0"/>
+         <Label fx:id="rank1" alignment="CENTER" layoutX="335.0" layoutY="94.0" prefHeight="34.0" prefWidth="80.0"
+                text="1" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank2" alignment="CENTER" layoutX="335.0" layoutY="145.0" prefHeight="34.0" prefWidth="80.0"
+                text="2" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank3" alignment="CENTER" layoutX="336.0" layoutY="194.0" prefHeight="34.0" prefWidth="80.0"
+                text="3" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank4" alignment="CENTER" layoutX="335.0" layoutY="242.0" prefHeight="34.0" prefWidth="80.0"
+                text="4" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank5" alignment="CENTER" layoutX="335.0" layoutY="284.0" prefHeight="34.0" prefWidth="80.0"
+                text="5" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank6" alignment="CENTER" layoutX="336.0" layoutY="329.0" prefHeight="34.0" prefWidth="80.0"
+                text="6" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank7" alignment="CENTER" layoutX="336.0" layoutY="374.0" prefHeight="34.0" prefWidth="80.0"
+                text="7" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank8" alignment="CENTER" layoutX="336.0" layoutY="419.0" prefHeight="34.0" prefWidth="80.0"
+                text="8" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Label fx:id="rank9" alignment="CENTER" layoutX="335.0" layoutY="464.0" prefHeight="34.0" prefWidth="80.0"
+                text="9" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Line endX="109.51470947265625" endY="3.0517578125E-5" layoutX="607.0" layoutY="460.0"
+               startX="-533.7999877929688" startY="3.0517578125E-5" stroke="#862020" strokeType="OUTSIDE"
+               strokeWidth="6.0"/>
+         <Label fx:id="rank10" alignment="CENTER" layoutX="335.0" layoutY="510.0" prefHeight="34.0" prefWidth="80.0"
+                text="10" textFill="WHITE">
+            <font>
+               <Font size="24.0"/>
+            </font>
+            <effect>
+               <Bloom/>
+            </effect>
+         </Label>
+         <Button fx:id="back" layoutX="724.0" layoutY="24.0" mnemonicParsing="false" onAction="#toMain"
+                 style="-fx-background-color: red;" text="back">
+            <font>
+               <Font name="System Bold" size="12.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+   </left>
+</BorderPane>

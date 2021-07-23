@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <left>
+      <AnchorPane prefHeight="584.0" prefWidth="274.0" style="-fx-background-color: black;"
+                  BorderPane.alignment="CENTER">
+         <VBox layoutX="29.0" layoutY="104.0" prefHeight="307.0" prefWidth="215.0" spacing="20.0">
+            <Button fx:id="play" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                    onAction="#play" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: grey;"
+                    text="Play" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0"/>
+               </font>
+            </Button>
+            <Button fx:id="leaderboard" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                    onAction="#showLeaderBoard" prefHeight="65.0" prefWidth="180.0"
+                    style="-fx-background-color: grey;" text="Leaderboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0"/>
+               </font>
+            </Button>
+            <Button fx:id="deleteAcc" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                    onAction="#deleteAccount" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: grey;"
+                    text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0"/>
+               </font>
+            </Button>
+            <Button fx:id="changePassword" alignment="CENTER" maxWidth="1.7976931348623157E308"
+                    mnemonicParsing="false" onAction="#changePassword" prefHeight="65.0" prefWidth="180.0"
+                    style="-fx-background-color: grey;" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0"/>
+               </font>
+            </Button>
+            <Button fx:id="logout" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                    onAction="#logout" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: grey;"
+                    text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0"/>
+               </font>
+            </Button>
+         </VBox>
+         <AnchorPane layoutX="1.0" prefHeight="96.0" prefWidth="276.0">
+            <Label layoutX="14.0" layoutY="33.0" text="Logged in as :" textFill="#fffb00">
+               <font>
+                  <Font name="System Bold" size="18.0"/>
+               </font>
+               <effect>
+                  <Glow level="1.0"/>
+               </effect>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="151.0" layoutY="37.0" prefHeight="18.0" prefWidth="116.0"
+                   textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="15.0"/>
+               </font>
+            </Label>
+         </AnchorPane>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="470.0" prefWidth="584.0" style="-fx-background-image:url('/images/pacwall.jpg');-fx-background-size: 500;-fx-fit-to-height:true;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

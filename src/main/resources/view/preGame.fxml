@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" fx:id="pane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0"
+            prefWidth="774.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.PreGame">
+    <top>
+        <AnchorPane prefHeight="163.0" prefWidth="774.0" style="-fx-background-color: blue;"
+                    BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" layoutX="149.0" layoutY="35.0" prefHeight="93.0" prefWidth="438.0"
+                   text="Choose lives and map" textFill="#bc0303">
+                <font>
+                    <Font name="System Bold Italic" size="31.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="438.0" prefWidth="774.0" style="-fx-background-color: black;"
+                    BorderPane.alignment="CENTER">
+           <ImageView fitHeight="199.0" fitWidth="275.0" layoutX="112.0" layoutY="39.0" pickOnBounds="true"
+                      preserveRatio="true">
+              <Image url="/images/heart2.png"/>
+           </ImageView>
+            <Button fx:id="increaseLives" layoutX="314.0" layoutY="68.0" mnemonicParsing="false"
+                    onAction="#increaseLives"
+                    prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: red;" text="+">
+                <font>
+                    <Font name="System Bold" size="12.0"/>
+                </font>
+            </Button>
+            <Button fx:id="decrease" layoutX="314.0" layoutY="131.0" mnemonicParsing="false" onAction="#decreaseLives"
+                    prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: red;" text="-">
+                <font>
+                    <Font name="System Bold" size="13.0"/>
+                </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="97.0" prefHeight="38.0" prefWidth="72.0" text="Lives :" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="22.0"/>
+                </font>
+                <effect>
+                    <Bloom threshold="0.0"/>
+                </effect>
+            </Label>
+            <Label fx:id="lives" layoutX="112.0" layoutY="80.0" prefHeight="38.0" prefWidth="72.0" textFill="#ec0505">
+                <font>
+                    <Font name="System Bold Italic" size="45"/>
+                </font>
+                <effect>
+                    <Bloom threshold="0.0"/>
+                </effect>
+            </Label>
+            <Label layoutX="465.0" layoutY="62.0" fx:id="choose" prefHeight="38.0" prefWidth="276.0" text="Choose favorite map num"
+                   textFill="#04f700">
+                <font>
+                    <Font name="System Bold Italic" size="22.0"/>
+                </font>
+                <effect>
+                    <Bloom threshold="0.0"/>
+                </effect>
+            </Label>
+            <TextField fx:id="numberLabel" layoutX="474.0" layoutY="122.0" prefHeight="26.0" prefWidth="258.0"
+                       promptText="enter number"/>
+            <Label fx:id="notifLabel" alignment="CENTER" layoutX="105.0" layoutY="327.0" prefHeight="18.0"
+                   prefWidth="562.0" textFill="RED">
+                <font>
+                    <Font name="System Bold" size="15.0"/>
+                </font>
+            </Label>
+            <Button fx:id="start" layoutX="148.0" layoutY="193.0" mnemonicParsing="false" onAction="#start"
+                    prefHeight="26.0" prefWidth="477.0" style="-fx-background-color: green;" text="Enter Game"
+                    textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="16.0"/>
+                </font>
+                <effect>
+                    <Bloom threshold="0.5"/>
+                </effect>
+            </Button>
+            <Button fx:id="back" layoutX="148.0" layoutY="245.0" mnemonicParsing="false" onAction="#back"
+                    prefHeight="26.0"
+                    prefWidth="477.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="16.0"/>
+                </font>
+                <effect>
+                    <Bloom threshold="0.5"/>
+                </effect>
+            </Button>
+        </AnchorPane>
+    </center>
+</BorderPane>

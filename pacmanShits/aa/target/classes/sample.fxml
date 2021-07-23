@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="274.0" prefWidth="342.0" vgap="10"
+          xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints/>
+      <ColumnConstraints/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints/>
+   </rowConstraints>
+   <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+      <top>
+         <AnchorPane prefHeight="258.0" prefWidth="340.0" BorderPane.alignment="CENTER"/>
+      </top>
+   </BorderPane>
+   <AnchorPane prefHeight="258.0" prefWidth="233.0">
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="100.0" layoutY="241.0" radius="17.0" stroke="BLACK"
+              strokeType="INSIDE"/>
+   </AnchorPane>
+</GridPane>

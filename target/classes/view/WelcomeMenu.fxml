@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controller.WelcomeMenuController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <BorderPane prefHeight="568.0" prefWidth="774.0">
+        <top>
+            <AnchorPane prefHeight="213.0" prefWidth="774.0"
+                        style="-fx-background-image: url('/images/pacmanLogo.gif'); -fx-background-position: 120;"
+                        BorderPane.alignment="CENTER"/>
+        </top>
+        <bottom>
+            <AnchorPane prefHeight="371.0" prefWidth="774.0" style="-fx-background-color: black;"
+                        BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" layoutX="139.0" layoutY="239.0" prefHeight="39.0" prefWidth="150.0"
+                       text="Already a user?" textFill="#ffe500">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0"/>
+                    </font>
+                    <effect>
+                        <Glow level="1.0"/>
+                    </effect>
+                </Label>
+                <Button fx:id="enterButton" alignment="CENTER" layoutX="300.0" onAction="#enter" layoutY="55.0"
+                        mnemonicParsing="false" prefHeight="59.0" prefWidth="174.0"
+                        style="-fx-background-color: #dede5d;" text="Enter">
+                    <font>
+                        <Font name="Bauhaus 93" size="32.0"/>
+                    </font>
+                    <effect>
+                        <InnerShadow/>
+                    </effect>
+                </Button>
+                <Label alignment="CENTER" layoutX="82.0" layoutY="65.0" prefHeight="39.0" prefWidth="150.0"
+                       text="Enter without logging" textFill="#ffe500">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0"/>
+                    </font>
+                    <effect>
+                        <Glow level="1.0"/>
+                    </effect>
+                </Label>
+                <Label alignment="CENTER" layoutX="89.0" layoutY="158.0" prefHeight="39.0" prefWidth="150.0"
+                       text="Register as a user " textFill="#ffe500">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0"/>
+                    </font>
+                    <effect>
+                        <Glow level="1.0"/>
+                    </effect>
+                </Label>
+                <Button fx:id="registerButton" alignment="CENTER" layoutX="304.0" layoutY="156.0"
+                        mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="171.0"
+                        style="-fx-background-color: #dede5d ;" text="Register">
+                    <font>
+                        <Font name="Bauhaus 93" size="23.0"/>
+                    </font>
+                    <effect>
+                        <InnerShadow/>
+                    </effect>
+                </Button>
+                <Button fx:id="loginButton" alignment="CENTER" layoutX="346.0" layoutY="243.0"
+                        mnemonicParsing="false" onAction="#login" prefHeight="14.0" prefWidth="82.0"
+                        style="-fx-background-color: #dede5d;" text="Login">
+                    <font>
+                        <Font name="Bauhaus 93" size="17.0"/>
+                    </font>
+                    <effect>
+                        <InnerShadow/>
+                    </effect>
+                </Button>
+                <Button fx:id="exitButton" layoutX="722.0" layoutY="331.0" mnemonicParsing="false" onAction="#exit"
+                        style="-fx-background-color: red;" text="exit">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Button>
+                <ImageView fx:id="pacmanGif1" blendMode="HARD_LIGHT" fitHeight="165.0" fitWidth="214.0"
+                           layoutX="541.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="/images/gifgif.gif"/>
+                </ImageView>
+            </AnchorPane>
+        </bottom>
+    </BorderPane>
+</GridPane>
